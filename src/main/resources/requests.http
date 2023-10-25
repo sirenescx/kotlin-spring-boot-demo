@@ -28,4 +28,4 @@ Content-Type: application/json
 GET http://localhost:8080/
 
 ### Get the message by its id
-GET http://localhost:8080/cab75173-23c2-44b3-a3b1-7fa470db1dc9
+GET http://localhost:8080/282ca338-02be-42c6-9c49-8a4e76bbad54

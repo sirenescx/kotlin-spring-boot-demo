@@ -1,25 +1,20 @@
 package com.example.demo.services
 
 import com.example.demo.models.Message
-import org.springframework.jdbc.core.JdbcTemplate
+import com.example.demo.repositories.MessageRepository
 import org.springframework.stereotype.Service
 import java.util.*
 
 @Service
-class MessageService(val db: JdbcTemplate) {
-    fun findMessages(): List<Message> = db.query("select * from messages") { response, _ ->
-        Message(response.getString("id"), response.getString("text"))
-    }
+class MessageService(val repository: MessageRepository) {
+    fun findMessages(): List<Message> = repository.findAll().toList()
 
-    fun findMessageById(id: String): List<Message> = db.query("select * from messages where id = '$id'") { response, _ ->
-        Message(response.getString("id"), response.getString("text"))
-    }
+    fun findMessageById(id: String): List<Message> = repository.findById(id).toList()
 
     fun save(message: Message) {
-        val id = message.id ?: UUID.randomUUID().toString()
-        db.update(
-            "insert into messages values ( ?, ? )",
-            id, message.text
-        )
+        repository.save(message)
     }
+
+    fun <T : Any> Optional<out T>.toList(): List<T> =
+        if (isPresent) listOf(get()) else emptyList()
 }

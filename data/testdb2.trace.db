@@ -1,0 +1,3 @@
+2023-10-26 01:35:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "messages" not found (candidates are: "MESSAGES"); SQL statement:
+INSERT INTO "messages" ("TEXT") VALUES (?) [42103-214]
