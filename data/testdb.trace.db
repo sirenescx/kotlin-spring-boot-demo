@@ -1,0 +1,12 @@
+2023-10-26 01:22:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from messages where id = cab75173-23[*]c2-44b3-a3b1-7fa470db1dc9"; SQL statement:
+select * from messages where id = cab75173-23c2-44b3-a3b1-7fa470db1dc9 [42000-214]
+2023-10-26 01:23:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from messages where id = cab75173-23[*]c2-44b3-a3b1-7fa470db1dc9"; SQL statement:
+select * from messages where id = cab75173-23c2-44b3-a3b1-7fa470db1dc9 [42000-214]
+2023-10-26 01:23:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from messages where id = cab75173-23[*]c2-44b3-a3b1-7fa470db1dc9"; SQL statement:
+select * from messages where id = cab75173-23c2-44b3-a3b1-7fa470db1dc9 [42000-214]
+2023-10-26 01:23:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "select * from messages where id = cab75173-23[*]c2-44b3-a3b1-7fa470db1dc9"; SQL statement:
+select * from messages where id = cab75173-23c2-44b3-a3b1-7fa470db1dc9 [42000-214]
